@@ -1,0 +1,64 @@
+# Arrays and Objects
+
+
+1. Arrays []
+2. Objects {}
+- There is no need for classes!
+- You can create objects on the fly
+
+
+```jsx
+// Arrays
+const numbers = [8, 'jamal', false, 4, (name) => {console.log(name)}]
+const emptyArray = []
+emptyArray[2] = 43
+
+// Objects
+const user = {
+    userName: 'Jamal',
+    age: 87,
+    authenticated: false,
+    email: 'jamalbelilet@gmail.com',
+user.usernam = 'fdas'
+
+// Objects inside Array
+const users = [
+    user,
+    1,
+    {
+        userName: 'Jamal',
+        age: 87,
+        authenticated: false
+    },
+]
+
+// Array inside Object
+const training = {
+    title: 'Learn Javascript',
+    chapters: [
+        'Variables',
+        'Functions',
+        'Modules',
+    ],
+}
+
+// ...
+const trainings = [
+    {
+        title: 'Learn Javascript',
+        chapters: [
+            'Variables',
+            'Functions',
+            'Modules',
+        ],
+    },
+    {
+        title: 'Learn React',
+        chapters: [
+            'JS basics',
+            'JSX',
+            'useState',
+        ],
+    },
+]
+```

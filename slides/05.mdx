@@ -1,0 +1,22 @@
+# Array methods
+
+- There are several built in methods for arrays manupilation
+- map, filter, reduce, includes, forEach, some, every, sort
+- This methods does not modify the initial array but returns a new one!
+
+```jsx
+const numbers = [8, 2, 3, 4, 9]
+
+const newNumbersArray = numbers.map(
+    (num) => {
+        return num / 2
+    }
+)
+
+const filtredArray = numbers.filter(
+    (num) => {
+        return num % 2 == 0 
+    }
+)
+```
+

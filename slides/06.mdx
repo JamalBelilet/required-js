@@ -1,0 +1,15 @@
+# Async, and fetch
+
+- We'll use (fetch) to get data from the internet,
+    but there are other options out there like (Axios)
+
+- Consider (then) like signing a contract!
+
+- (then) methodes can be chained!
+
+```jsx
+fetch('https://api.formini.dz/articles')
+		.then((response) => response.json())
+		.then(articles => console.log(articles))
+```
+

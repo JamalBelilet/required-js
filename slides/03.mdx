@@ -1,0 +1,22 @@
+# Import from other files
+
+- First, you need to define somthing and mark it for export in file #1 
+- Second, in the Second file #2 import what you've exported in file #1
+
+```jsx
+// 1. file #1 (e.g file1.js)
+function sayHello(name) {
+    console.log('hello ' + name)
+}
+export { sayHello, var1, var2 }
+export default alpha
+// ----- end of file1.js ---------------
+
+// 2. file #2 (e.g file2.js)
+import alpha, { sayHello, var1 } from 'file1'
+
+function main() {
+  sayHello();
+}
+// ----- end of file2.js ---------------
+```
